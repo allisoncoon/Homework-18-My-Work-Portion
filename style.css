@@ -1,0 +1,93 @@
+.myWork {
+    background-color: #E3CBC1 ;
+}
+
+.workGrid {
+    display: grid;
+    height: 275vh;
+    grid-row-gap: 5px;
+    grid-column-gap: 40px;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas:
+  "travisCounty text1"
+  "healthKeeper text2"
+  "eastSide text3";
+}
+
+#travisCounty {
+grid-area: travisCounty;
+}
+
+#healthKeeper {
+    grid-area: healthKeeper;
+}
+
+#eastSide {
+    grid-area: eastSide;
+}
+
+
+
+h1 {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Archivo Black', sans-serif;
+    color: #413A32;
+    text-align: center;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    color: #413A32;
+    text-align: center;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    color: #413A32;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    color: #413A32;
+    padding: 20px;
+
+}
+
+button {
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #413A32;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .workGrid {
+        height: 3300px;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px 200px 600px 200px 600px 200px;
+        grid-template-areas:
+      "travisCounty" 
+      "text1"
+      "healthKeeper"
+      "text2"
+      "eastSide" 
+      "text3";
+
+}
+
+text1 {
+    justify-content: top;
+}
